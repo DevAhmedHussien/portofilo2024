@@ -15,13 +15,13 @@ export function Hero() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              UI UX<br />DESIGNER
+              FRONTEND<br />DEVELOPER
             </h1>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              FULL STACK CODER
+            <h2 className="text-4xl md:text-4xl font-bold mb-8">
+              REACT / ANGULAR / NEXT
             </h2>
             <p className="text-lg mb-8 max-w-lg">
-              Passionate about creating beautiful, functional, and user-centered digital experiences
+              Transforming ideas into engaging, scalable, and high-performance web applications.
             </p>
             <Button
               size="lg"
@@ -37,10 +37,10 @@ export function Hero() {
             className="relative aspect-square"
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80"
+              src="/profile2.jpg"
               alt="Professional headshot"
               fill
-              className="rounded-lg shadow-xl object-cover"
+              className="rounded-lg shadow-xl object-cover object-top"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />

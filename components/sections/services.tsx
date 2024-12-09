@@ -6,19 +6,19 @@ import { Button } from "@/components/ui/button"
 
 const services = [
   {
-    title: "Web Design",
-    description: "Creating beautiful and functional websites that drive results",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=1200&q=80",
+    title: "Cutting-Edge Frontend Development",
+    description: "Delivering modern, interactive, and scalable web applications using top frameworks like React, Angular, and Next.js. Specializing in creating seamless and engaging user experiences that captivate and retain users.",
+    image: "/services/cutting-edge.jpeg",
   },
   {
-    title: "App Design",
-    description: "Crafting intuitive mobile experiences that users love",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80",
+    title: "Full-Stack Integration",
+    description: "Building robust, scalable, and high-performance web platforms by combining frontend expertise with backend technologies such as Node.js, Nest.js, and Python. Ensuring smooth and efficient application architecture.",
+    image: "/services/full-stack.jpeg",
   },
   {
-    title: "Web Development",
-    description: "Building robust and scalable web applications",
-    image: "https://images.unsplash.com/photo-1503437313881-503a91226402?w=1200&q=80",
+    title: "UI/UX Excellence",
+    description: "Transforming complex ideas into elegant, functional interfaces. Prioritizing responsiveness, speed, and accessibility to maximize user engagement and satisfaction.",
+    image: "/services/ui-ux.jpeg",
   },
 ]
 
