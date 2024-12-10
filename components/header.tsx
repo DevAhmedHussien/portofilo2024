@@ -17,8 +17,8 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full bg-white/30 backdrop-blur-md z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="fixed w-full bg-gradient-to-br from-[#4169E1] to-[#4169E1] z-50">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 px-0" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5 text-2xl font-bold">
           <span className="text-[36px] text-white">SYED</span><span className="text-[14px] text-white">.com</span>

@@ -6,8 +6,25 @@ import { FaFacebookF, FaInstagram, FaTelegramPlane, FaLinkedinIn } from "react-i
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-[#4169E1] to-[#1E3A8A] text-white px-6 md:px-12 flex flex-col items-center justify-between py-20">
-<div className="max-w-7xl mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 flex-grow mt-4">
+    <section className="relative min-h-screen bg-gradient-to-br from-[#4169E1] to-[#4169E1] text-white px-6 md:px-12 flex flex-col items-center justify-between py-20">
+      <div className="max-w-7xl mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 flex-grow mt-4">
+
+        {/* Image Section */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="relative w-full max-w-xs sm:max-w-md lg:max-w-sm"
+        >
+          <Image
+            src="/profile2.jpg" // Replace with the actual path to your image
+            alt="Alex - Frontend Developer"
+            width={400}
+            height={500}
+            className="rounded-3xl shadow-2xl object-cover border-4 border-white"
+            priority
+          />
+        </motion.div>
 
         {/* Left Section */}
         <div className="text-center lg:text-left lg:w-1/2 space-y-8">
@@ -44,23 +61,6 @@ export function Hero() {
             </p>
           </motion.div>
         </div>
-
-        {/* Image Section */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="relative w-full max-w-xs sm:max-w-md lg:max-w-sm"
-        >
-          <Image
-            src="/profile2.jpg" // Replace with the actual path to your image
-            alt="Alex - Frontend Developer"
-            width={400}
-            height={500}
-            className="rounded-3xl shadow-2xl object-cover border-4 border-white"
-            priority
-          />
-        </motion.div>
       </div>
 
       {/* Bottom Section */}
