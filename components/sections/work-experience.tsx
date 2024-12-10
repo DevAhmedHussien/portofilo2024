@@ -11,9 +11,9 @@ const stats = [
 
 export function WorkExperience() {
   return (
-    <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
+    <section className="py-20 px-4 md:px-6 lg:px-8 bg-[#4169E1]"> 
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12">MY WORK EXPERIENCE</h2>
+        <h2 className="text-4xl font-bold mb-12 text-white">MY WORK EXPERIENCE</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <motion.div
@@ -23,8 +23,8 @@ export function WorkExperience() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-5xl font-bold text-[#4169E1] mb-2">{stat.value}</div>
-              <div className="text-gray-600">{stat.label}</div>
+              <div className="text-5xl font-bold text-white mb-2">{stat.value}</div>
+              <div className="text-white">{stat.label}</div>
             </motion.div>
           ))}
         </div>
