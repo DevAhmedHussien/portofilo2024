@@ -58,7 +58,7 @@ export function Testimonials() {
 
   // Handle key events for navigation
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: any) => {
       if (event.key === "ArrowRight") handleNext()
       if (event.key === "ArrowLeft") handlePrev()
     }

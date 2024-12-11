@@ -7,18 +7,18 @@ import type { Metadata } from 'next'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Alex - UI/UX Designer & Full Stack Developer',
-  description: 'Professional portfolio of Alex, showcasing UI/UX design and full stack development work',
+  title: 'Syed - Frontend Developer',
+  description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
   openGraph: {
-    title: 'Alex - UI/UX Designer & Full Stack Developer',
-    description: 'Professional portfolio of Alex, showcasing UI/UX design and full stack development work',
+    title: 'Syed - Frontend Developer',
+    description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alex - UI/UX Designer & Full Stack Developer',
-    description: 'Professional portfolio of Alex, showcasing UI/UX design and full stack development work',
+    title: 'Syed - Frontend Developer',
+    description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
   },
 }
 

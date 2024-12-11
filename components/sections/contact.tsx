@@ -13,16 +13,16 @@ export function Contact() {
         <div className="mb-8 lg:mb-0">
           <h2 className="text-6xl lg:text-8xl font-bold leading-tight mb-4">HAVE A PROJECT?</h2>
           <div style={{  display:"flex"  ,justifyContent:'space-between' ,flexWrap:'wrap', alignItems:'center',gap: '10rem'}}>
-          {/* //flex-shrink-0 mb-8 */}
+            {/* //flex-shrink-0 mb-8 */}
             <div className=" "style={{justifyContent:'space-between' , flexWrap:'wrap', alignItems:'center', display:"flex", gap:'3rem'}}>
-            <button
-  onClick={() => setShowForm(true)}
-  className="bg-yellow-400 text-black font-bold w-24 h-24 rounded-full flex flex-col items-center justify-center shadow-md hover:bg-yellow-500 transition-transform transform hover:scale-105 hover:-rotate-45"
-  style={{ marginTop: '5rem' }}
->
-  <span className="text-sm mb-1">HIRE ME</span>
-  <HiArrowRight size={24} className="transition-transform duration-300 hover:-rotate-45" />
-</button>
+              <button
+                onClick={() => setShowForm(true)}
+                className="bg-yellow-400 text-black font-bold w-24 h-24 rounded-full flex flex-col items-center justify-center shadow-md hover:bg-yellow-500 transition-transform transform hover:scale-105 hover:-rotate-45"
+                style={{ marginTop: '5rem' }}
+              >
+                <span className="text-sm mb-1">HIRE ME</span>
+                <HiArrowRight size={24} className="transition-transform duration-300 hover:-rotate-45" />
+              </button>
               <p className="text-gray-700 max-w-md" style={{width:'300px'}}>
                 WHETHER YOU NEED INTUITIVE UI/UX DESIGN, ROBUST DEVELOPMENT, OR A SEAMLESS BLEND OF BOTH, I'M HERE TO HELP.
               </p>

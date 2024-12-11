@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaTelegramPlane, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGoogle } from "react-icons/fa";
 
 export function Hero() {
   return (
@@ -21,7 +21,7 @@ export function Hero() {
             alt="Alex - Frontend Developer"
             width={400}
             height={500}
-            className="rounded-3xl shadow-2xl object-cover border-4 border-white"
+            className="border-white shadow-2xl object-cover border-4 rounded-md"
             priority
           />
         </motion.div>
@@ -71,16 +71,16 @@ export function Hero() {
         className="w-full text-center space-y-6 mt-12"
       >
         <div className="flex gap-6 justify-center">
-          <a href="#" aria-label="Facebook" className="group transition">
+          {/* <a href="#" target="_blank" aria-label="Facebook" className="group transition">
             <FaFacebookF className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#4169E1] transition duration-300" />
           </a>
-          <a href="#" aria-label="Instagram" className="group transition">
+          <a href="#" target="_blank" aria-label="Instagram" className="group transition">
             <FaInstagram className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#4169E1] transition duration-300" />
           </a>
-          <a href="#" aria-label="Telegram" className="group transition">
-            <FaTelegramPlane className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#4169E1] transition duration-300" />
-          </a>
-          <a href="#" aria-label="LinkedIn" className="group transition">
+          <a href="#" target="_blank" aria-label="Telegram" className="group transition">
+            <FaGoogle className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#4169E1] transition duration-300" />
+          </a> */}
+          <a href="https://www.linkedin.com/in/smhussain1/" target="_blank" aria-label="LinkedIn" className="group transition">
             <FaLinkedinIn className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#4169E1] transition duration-300" />
           </a>
         </div>
