@@ -75,6 +75,7 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Roboto', 'Open Sans', 'Lato'
   }
   body {
     @apply bg-background text-foreground;
