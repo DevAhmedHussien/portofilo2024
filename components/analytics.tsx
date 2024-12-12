@@ -1,20 +1,37 @@
-"use client"
+"use client";
 
-import { useEffect } from 'react'
-import { usePathname, useSearchParams } from 'next/navigation'
-import Script from 'next/script'
+import { useEffect } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
+import Script from 'next/script';
+
+export {};
+
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 export function Analytics() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (window.gtag) {
-      window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
-        page_path: pathname + searchParams.toString(),
-      })
-    }
-  }, [pathname, searchParams])
+    const handleRouteChange = () => {
+      if (window.gtag) {
+        window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
+          page_path: pathname + searchParams.toString(),
+        });
+      }
+    };
+
+    handleRouteChange(); // Initial call
+    window.addEventListener('popstate', handleRouteChange); // Handle back/forward navigation
+
+    return () => {
+      window.removeEventListener('popstate', handleRouteChange);
+    };
+  }, [pathname, searchParams]);
 
   return (
     <>
@@ -35,5 +52,5 @@ export function Analytics() {
         }}
       />
     </>
-  )
+  );
 }
