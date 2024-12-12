@@ -1,10 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from '@next/font/google';
 import { ThemeProvider } from '@/components/theme-provider'
 import { Analytics } from '@/components/analytics'
 import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Syed - Frontend Developer',
@@ -43,13 +47,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className={inter.className}>
+      <head />
+      <body className={`${roboto.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
