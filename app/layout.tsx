@@ -14,11 +14,25 @@ export const metadata: Metadata = {
     description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: 'https://www.smhtech.tech/profile2.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Syed - Frontend Developer',
+      },
+    ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Syed - Frontend Developer',
     description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
+    images: [
+      {
+        url: 'https://www.smhtech.tech/profile2.jpg',
+        alt: 'Syed - Frontend Developer',
+      },
+    ]
   },
 }
 
