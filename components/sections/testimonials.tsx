@@ -82,13 +82,13 @@ export function Testimonials() {
                 <div className="bg-gray-50 p-6 rounded-lg border h-full flex flex-col justify-between">
                   <p className="text-gray-700 mb-6 text-base">"{testimonial.text}"</p>
                   <div className="flex items-center mt-auto">
-                    <Image
+                    {/* <Image
                       src={testimonial.avatar}
                       alt={testimonial.author}
                       width={50}
                       height={50}
                       className="rounded-full mr-4"
-                    />
+                    /> */}
                     <div>
                       <div className="font-bold text-gray-900">{testimonial.author}</div>
                       <div className="text-sm text-gray-500">{testimonial.role}</div>

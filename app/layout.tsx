@@ -1,8 +1,8 @@
-import './globals.css'
-import { Roboto } from '@next/font/google';
-import { ThemeProvider } from '@/components/theme-provider'
-import { Analytics } from '@/components/analytics'
-import type { Metadata } from 'next'
+import './globals.css';
+import { Roboto } from 'next/font/google';
+import { ThemeProvider } from '@/components/theme-provider';
+import { Analytics } from '@/components/analytics';
+import type { Metadata } from 'next';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -11,46 +11,46 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Syed - Frontend Developer',
-  description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
+  title: 'Ahmed - Frontend Developer',
+  description: 'Professional portfolio of Ahmed, showcasing frontend design and full-stack development work',
   openGraph: {
-    title: 'Syed - Frontend Developer',
-    description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
+    title: 'Ahmed - Frontend Developer',
+    description: 'Professional portfolio of Ahmed, showcasing frontend design and full-stack development work',
     type: 'website',
     locale: 'en_US',
     images: [
       {
-        url: 'https://www.smhtech.tech/profile2.jpg',
+        url: 'https://www.smhtech.tech/ahmed.png',
         width: 1200,
         height: 630,
-        alt: 'Syed - Frontend Developer',
+        alt: 'Ahmed - Frontend Developer',
       },
-    ]
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Syed - Frontend Developer',
-    description: 'Professional portfolio of Syed, showcasing Frontend design and full stack development work',
+    title: 'Ahmed - Frontend Developer',
+    description: 'Professional portfolio of Ahmed, showcasing frontend design and full-stack development work',
     images: [
       {
-        url: 'https://www.smhtech.tech/profile2.jpg',
-        alt: 'Syed - Frontend Developer',
+        url: 'https://www.smhtech.tech/ahmed.png',
+        alt: 'Ahmed - Frontend Developer',
       },
-    ]
+    ],
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${roboto.className}`}>
+      <body className={roboto.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -62,5 +62,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

@@ -36,7 +36,7 @@ export function Footer() {
           </div>
         </div> */}
         <div className="text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Syed. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ahmed. All rights reserved.</p>
         </div>
       </div>
     </footer>

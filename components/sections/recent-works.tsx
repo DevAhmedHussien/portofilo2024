@@ -4,6 +4,13 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const works = [
+   {
+    title: "Joey med Telehealth ",
+    image: "/recent/joey.webp",
+    link: "https://joeymed.com/",
+    public: true,
+    category: "Next App"
+  },
   {
     title: "Ascend Rehab Inc.",
     image: "/recent/ascend-rehab.webp",
@@ -26,13 +33,13 @@ const works = [
     category: "React App & UI/UX Design",
     tooltip: "It is confidentials"
   },
-  {
-    title: "Enableu",
-    image: "/recent/enableu-app.webp",
-    link: "https://enableu.com/",
-    public: true,
-    category: "Angular App"
-  },
+  // {
+  //   title: "Enableu",
+  //   image: "/recent/enableu-app.webp",
+  //   link: "https://enableu.com/",
+  //   public: true,
+  //   category: "Angular App"
+  // },
   {
     title: "Internet Service Provider System",
     image: "/recent/sms.webp",

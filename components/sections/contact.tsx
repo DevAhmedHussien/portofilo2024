@@ -8,7 +8,7 @@ export function Contact() {
   const [showForm, setShowForm] = useState(false)
 
   return (
-    <section className="py-20 px-4 md:px-6 lg:px-8 bg-white relative">
+    <section id="contact" className="py-20 px-4 md:px-6 lg:px-8 bg-white relative">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between">
         <div className="mb-8 lg:mb-0">
           <h2 className="text-6xl lg:text-8xl font-bold leading-tight mb-4">HAVE A PROJECT?</h2>

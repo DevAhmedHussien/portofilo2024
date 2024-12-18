@@ -19,7 +19,7 @@ export default function Home() {
         <RecentWorks />
         <WorkExperience />
         <WorkProcess />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <Workstation />
         <Contact />
       </main>

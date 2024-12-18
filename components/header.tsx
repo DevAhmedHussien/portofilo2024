@@ -7,10 +7,10 @@ import { Menu, X } from "lucide-react"
 
 const navigation = [
   { name: "Home", href: "#" },
-  { name: "About", href: "#about" },
+  // { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Works", href: "#works" },
-  { name: "Contact", href: "#contact" },
+  // { name: "Contact", href: "#contact" },
 ]
 
 export function Header() {
@@ -18,11 +18,10 @@ export function Header() {
 
   return (
     <header className="fixed w-full bg-gradient-to-br from-[#4169E1] to-[#4169E1] z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-0" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5 text-2xl font-bold">
-            <span className="text-[36px] text-white">SYED</span>
-            {/* <span className="text-[14px] text-white">.com</span> */}
+            <span className="text-[36px] text-white">Ahmed</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -47,7 +46,7 @@ export function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-[20px]">
+          <Button href="#contact" size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-[20px]">
             Let's Talk
           </Button>
         </div>
@@ -60,7 +59,7 @@ export function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" style={{height:'400px'}}>
             <div className="flex items-center justify-between">
               <Link href="#" className="-m-1.5 p-1.5 text-2xl font-bold">
-                Syed
+                Ahmed
               </Link>
               <button
                 type="button"
