@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="fixed w-full bg-gradient-to-br from-[#4169E1] to-[#4169E1] z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-" aria-label="Global">
+      <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5 text-2xl font-bold">
             <span className="text-[36px] text-white">Ahmed</span>
