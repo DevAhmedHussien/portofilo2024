@@ -10,7 +10,7 @@ const navigation = [
   // { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Works", href: "#works" },
-  // { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#contact" },
 ]
 
 export function Header() {
@@ -46,9 +46,19 @@ export function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button href="#contact" size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-[20px]">
-            Let's Talk
-          </Button>
+          {/* */}
+          <Link 
+            href='#contact'
+          className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-[20px]" 
+            style={{    
+              display:'flex',
+              justifyContent:'center',
+            width: '138px',
+            height: '40px'
+            }}   >
+            My Resume
+
+          </Link>
         </div>
       </nav>
       
