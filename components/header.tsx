@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 const navigation = [
@@ -47,19 +46,13 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* */}
-          <Link 
-            href='#contact'
-          className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-[20px]" 
-            style={{    
-              display:'flex',
-              justifyContent:'center',
-            width: '138px',
-            height: '40px'
-            }}   >
+          <Link
+            href="#contact"
+            className="inline-flex items-center justify-center w-[138px] h-[40px] bg-yellow-400 text-black font-semibold rounded-[20px] transition-colors duration-300 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+          >
             My Resume
-
           </Link>
-        </div>
+              </div>
       </nav>
       
       {/* Mobile menu */}
