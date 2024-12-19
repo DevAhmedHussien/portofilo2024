@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-
+import { FaDownload } from 'react-icons/fa';
 const navigation = [
   { name: "Home", href: "#" },
   // { name: "About", href: "#about" },
@@ -47,11 +47,13 @@ export function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* */}
           <Link
-            href="#contact"
-            className="inline-flex items-center justify-center w-[138px] h-[40px] bg-yellow-400 text-black font-semibold rounded-[20px] transition-colors duration-300 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
-          >
-            My Resume
-          </Link>
+      href="/Ahmed2024.pdf" // Link to the PDF file
+      download="Ahmed2024.pdf"
+      className="inline-flex items-center justify-center w-[160px] h-[48px] bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-full shadow-lg transition-all duration-300 hover:from-yellow-500 hover:to-yellow-600 hover:shadow-xl hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+    >
+      <FaDownload className="mr-2 text-lg" />
+      My Resume
+    </Link>
               </div>
       </nav>
       
