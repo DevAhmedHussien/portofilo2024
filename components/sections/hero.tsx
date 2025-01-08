@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
+import {  FaLinkedinIn, FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 export function Hero() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-[#4169E1] to-[#4169E1] text-white px-6 md:px-12 flex flex-col items-center justify-between py-20">
@@ -39,7 +39,7 @@ export function Hero() {
               FRONTEND <br /> DEVELOPER
             </h1>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#FFD700] mb-7">
-              REACT / React Native / NEXT
+              REACT / REACT NATIVE / NEXT
             </h2>
             <p className="text-lg md:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0 mb-7">
               Transforming ideas into engaging, scalable, and high-performance web applications.
