@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import {  FaLinkedinIn, FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 export function Hero() {
   return (
@@ -70,15 +71,15 @@ export function Hero() {
         className="w-full text-center space-y-6 mt-12"
       >
         <div className="flex gap-6 justify-center">
-        <a href="https://wa.me/79821313577" target="_blank" aria-label="WhatsApp" className="group transition">
+        <Link href="https://wa.me/79821313577" target="_blank" aria-label="WhatsApp" className="group transition">
           <FaWhatsapp className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#25D366] transition duration-300 transform group-hover:scale-110" />
-        </a>
-        <a href="https://www.linkedin.com/in/ahmed-hussien-1574122a1/" target="_blank" aria-label="LinkedIn" className="group transition">
+        </Link>
+        <Link href="https://www.linkedin.com/in/ahmed-hussien-1574122a1/" target="_blank" aria-label="LinkedIn" className="group transition">
           <FaLinkedinIn className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#4169E1] transition duration-300 transform group-hover:scale-110" />
-        </a>
-        <a href="https://t.me/AhmedHussien12199" target="_blank" aria-label="Telegram" className="group transition">
+        </Link>
+        <Link href="https://t.me/AhmedHussien12199" target="_blank" aria-label="Telegram" className="group transition">
           <FaTelegramPlane className="text-6xl p-4 border-2 border-white rounded-full group-hover:bg-white group-hover:text-[#0088CC] transition duration-300 transform group-hover:scale-110" />
-        </a>
+        </Link>
           </div>
 
         <h1 className="text-5xl md:text-6xl font-extrabold">

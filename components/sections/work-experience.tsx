@@ -3,10 +3,10 @@
 import { motion } from "framer-motion"
 
 const stats = [
-  { value: "10+", label: "Years Experience" },
-  { value: "50+", label: "Projects Completed" },
-  { value: "15+", label: "Happy Clients" },
-  { value: "4+", label: "Customer Rating" }
+  { value: "2+", label: "Years Experience" },
+  { value: "150+", label: "Projects Completed" },
+  { value: "99%", label: "Happy Clients" },
+  { value: "5", label: "Customer Rating" }
 ]
 
 export function WorkExperience() {
