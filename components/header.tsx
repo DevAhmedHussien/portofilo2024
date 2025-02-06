@@ -89,17 +89,16 @@ export function Header() {
                     </Link>
                   ))}
                 </div>
-             {/* Mobile Buttons */}
-             <div className="mt-6 flex flex-col space-y-4">
-              <Link
-                href="/Ahmed2024.pdf"
-                download="Ahmed2024.pdf"
-                className="flex items-center justify-center px-4 py-3 text-lg font-semibold bg-yellow-400 text-black rounded-full shadow-md transition-all duration-300 hover:bg-yellow-500"
-              >
-                <FaDownload className="mr-2" /> Resume
-              </Link>
-            </div>
-              
+                {/* Mobile Buttons */}
+                <div className="mt-6 flex flex-col space-y-4">
+                  <Link
+                    href="/Ahmed2024.pdf"
+                    download="Ahmed2024.pdf"
+                    className="flex items-center justify-center px-4 py-3 text-lg font-semibold bg-yellow-400 text-black rounded-full shadow-md transition-all duration-300 hover:bg-yellow-500"
+                  >
+                    <FaDownload className="mr-2" /> Resume
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
